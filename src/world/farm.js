@@ -1,5 +1,6 @@
 import * as THREE from "three";
 import { farmLayout } from "./layout.js";
+import { Gate } from "./Gate.js";
 
 
 export function createFarm(scene) {
@@ -96,12 +97,22 @@ export function createFarm(scene) {
 
     // ===== KAPU =====
 
-    createGate(
+    createFence(scene);
+
+const gate =
+    new Gate(
         scene,
         farmLayout.fence.gate.x,
         farmLayout.fence.gate.z
     );
 
+return {
+
+    interactables: [
+        gate
+    ]
+
+};
 }
 
 

@@ -1,5 +1,5 @@
 import * as THREE from "three";
-import { colliders } from "./world/collision.js";
+import { colliders } from "../world/collision.js";
 
 export class Player {
 

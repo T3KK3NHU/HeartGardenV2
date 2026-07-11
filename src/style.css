@@ -17,3 +17,40 @@ canvas {
     display: block;
 
 }
+
+#crosshair {
+
+    position: fixed;
+
+    top: 50%;
+    left: 50%;
+
+    transform:
+        translate(-50%, -50%);
+
+    font-size: 30px;
+
+    color: white;
+
+    user-select: none;
+
+}
+
+
+#interaction-text {
+
+    position: fixed;
+
+    bottom: 15%;
+
+    width: 100%;
+
+    text-align: center;
+
+    color: white;
+
+    font-size: 22px;
+
+    font-family: Arial;
+
+}
